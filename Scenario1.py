@@ -12,7 +12,7 @@
 
 #It is up to you to decide what properties
 #are important and the theme of the game.
-
+import random
 enemyDict = {
     "Bogo" : {
         "damage" : 10,
@@ -46,18 +46,58 @@ enemyDict = {
     }
 }
 print(enemyDict)
-animal = input("What animal do you want to change ")
-if animal != ("Bogo" or "Glorb" or "Zorgo" or "Thrag" or "Drackor") :
-    print("Not Valid Animal")
-    exit(0)
-value = input("what attribute do you want to change ")
-if value != ("damage" or "health" or "speed" or "size") :
-    print("Not Valid Value")
-    exit(0)
-enemyDict[animal][value] = int(input("What do you want to change it to "))
-print(enemyDict)
+yn = input("would you like to change an animal")
+if yn == "Yes":
+    animal = input("What animal do you want to change ")
+    value = input("what attribute do you want to change ")
+    enemyDict[animal][value] = int(input("What do you want to change it to "))
+    print(enemyDict)
 
-
+#Variables For fighting
+animalFight = input("What animal do you want to fight ")
+playerHp = 25
+playerDamage = 10
+playerSpeed = 5
+enemyHp = enemyDict[animalFight]["health"]
+enemyDamage = enemyDict[animalFight]["damage"]
+enemySpeed = enemyDict[animalFight]["speed"]
+#for loop for fighting
+for i in range(99):
+    enemyAction = random.randint(1, 3)
+    print("You [",playerHp,"]", animalFight, "[",enemyHp,"]")
+    print("Actions:")
+    print("[Attack]")
+    print("[Heal]")
+    print("[Block]")
+    action = input(":")
+    #Player Attacks
+    if action == "Attack":
+        if enemyAction < 3:
+            enemyHp -= playerDamage
+    #Player Heals
+    if action == "Heal":
+        playerHp += (playerDamage - 3)
+    if playerHp > 25:
+        playerHp = 25
+    #Enemy attack and player Blocks
+    if action != ("Block"):
+        if enemyAction < 3:
+            playerHp -= enemyDamage
+    print("")
+    if enemyAction == 3:
+        print("Your enemy blocks")
+    if enemyAction < 3:
+        print("Your enemy Attacks")
+    print("")
+    print("You", action)
+    print("")
+    #Winning or losing
+    if playerHp < 1:
+        print("You have been defeated by a", animalFight, "You lose")
+        exit(0)
+    if enemyHp < 1:
+        print("You have defeated a", animalFight, "You win")
+        exit(0)
 
 
 
