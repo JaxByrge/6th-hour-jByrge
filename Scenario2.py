@@ -79,8 +79,6 @@ enemyDict = {
 }
 
 #Test the damage here by subtracting a party member's damage from the enemy's health.
-#x = (enemyDict["Zombo"]["Health"]) - (partyDictionary["LaeZel"]["Damage"])
-#print(x)
 
 randomEncounters = ("Zombo", "Bogo", "Trogo", "Thrag", "Drackon")
 encounter = random.choice(randomEncounters)
@@ -95,6 +93,7 @@ if partyMember != "LaeZel":
     if partyMember != "Shadowheart":
         if partyMember != "Gale":
             if partyMember != "Astarion":
+                partyMember = Unknown
                 playerHealth = 10
                 playerDamage = 10
                 playerAc = 10
@@ -105,3 +104,17 @@ print("[",partyMember,"]   [",encounter,"]")
 print("[HP]",playerHealth,"    [HP]",enemyHealth)
 print("[STR]",playerDamage,"   [STR]",enemyDamage)
 print("[DEF]",playerAc,"  [DEF]",enemyAc)
+print("")
+
+acHit = random.randint(1, 20)
+if acHit > enemyAc:
+    print("Your party member attacks for", playerDamage, " damage")
+    enemyHealth -= playerDamage
+else:
+    print("Your party member attacks for", playerDamage, " damage but it blocks")
+print("")
+print("[",partyMember,"]   [",encounter,"]")
+print("[HP]",playerHealth,"    [HP]",enemyHealth)
+print("[STR]",playerDamage,"   [STR]",enemyDamage)
+print("[DEF]",playerAc,"  [DEF]",enemyAc)
+
