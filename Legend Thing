@@ -1,0 +1,395 @@
+import random
+#Player Dictionary
+playerDict = {
+  "Pachys" : {
+    "Health" : 170,
+    "SpecialAtk" : 7,
+    "PhysicalAtk" : 19,
+    "Defense" : 30,
+    "Energy" : 110,
+    "EnergyRegen" : 25,
+    "Skill1" : "Bash",
+    "Skill2" : "Chomp",
+    "Skill3" : "EarthQuake",
+    "Skill4" : "Full Defense",
+  },
+  "Fafnir" : {
+    "Health" : 150,
+    "SpecialAtk" : 15,
+    "PhysicalAtk" : 12,
+    "Defense" : 25,
+    "Energy" : 150,
+    "EnergyRegen" : 30,
+    "Skill1" : "Firebolt",
+    "Skill2" : "Coin Bullets",
+    "Skill3" : "Chomp",
+    "Skill4" : "Hoard",
+  }, 
+  "Rajin" : {
+    "Health" : 140,
+    "SpecialAtk" : 18,
+    "PhysicalAtk" : 10,
+    "Defense" : 25,
+    "Energy" : 200,
+    "EnergyRegen" : 30,
+    "Skill1" : "Kaminari",
+    "Skill2" : "Storm",
+    "Skill3" : "Thunder Demon",
+    "Skill4" : "Drum Beat",
+  },
+  "Fujin" : {
+    "Health" : 130,
+    "SpecialAtk" : 16,
+    "PhysicalAtk" : 12,
+    "Defense" : 20,
+    "Energy" : 170,
+    "EnergyRegen" : 40,
+    "Skill1" : "Feirce Winds",
+    "Skill2" : "Storm",
+    "Skill3" : "Bash",
+    "Skill4" : "Hurricane",
+  },
+  "Apollo" : {
+    "Health" : 130,
+    "SpecialAtk" : 14,
+    "PhysicalAtk" : 15,
+    "Defense" : 20,
+    "Energy" : 150,
+    "EnergyRegen" : 30,
+    "Skill1" : "Arrow Storm",
+    "Skill2" : "Silver Arrow",
+    "Skill3" : "Plague",
+    "Skill4" : "Heal",
+  },
+}
+
+#Enemy Dictionary
+enemyDict = {
+  "Oni" : {
+    "Health" : 160,
+    "SpecialAtk" : 10,
+    "PhysicalAtk" : 16,
+    "Defense" : 30,
+    "Skill1" : "Firebolt",
+    "Skill2" : "Bash",
+    "Skill3" : "EarthQuake",
+    "Skill4" : "Heal",
+  },
+  "Hydra" : {
+    "Health" : 120,
+    "SpecialAtk" : 13,
+    "PhysicalAtk" : 14,
+    "Defense" : 20,
+    "Skill1" : "Chomp",
+    "Skill2" : "Acidic Spit",
+    "Skill3" : "Heal",
+    "Skill4" : "Plague",
+  },
+  "Fenrir" : {
+    "Health" : 135,
+    "SpecialAtk" : 12,
+    "PhysicalAtk" : 17,
+    "Defense" : 25,
+    "Skill1" : "Chomp",
+    "Skill2" : "Thunder Demon",
+    "Skill3" : "Blaze",
+    "Skill4" : "Gaze",
+  },
+  "Cyclops" : {
+    "Health" : 150,
+    "SpecialAtk" : 8,
+    "PhysicalAtk" : 18,
+    "Defense" : 30,
+    "Skill1" : "Bash",
+    "Skill2" : "EarthQuake",
+    "Skill3" : "Smash",
+    "Skill4" : "Stomp",
+  },
+  "Spriggan" : {
+    "Health" : 125,
+    "SpecialAtk" : 18,
+    "PhysicalAtk" : 8,
+    "Defense" : 20,
+    "Skill1" : "Wood Palm",
+    "Skill2" : "Feirce Winds",
+    "Skill3" : "Firebolt",
+    "Skill4" : "Great Forest",
+  },
+  "Tiamat" : {
+    "Health" : 130,
+    "SpecialAtk" : 14,
+    "PhysicalAtk" : 14,
+    "Defense" : 25,
+    "Skill1" : "Chomp",
+    "Skill2" : "Feirce Winds",
+    "Skill3" : "Storm",
+    "Skill4" : "Hurricane",
+  },
+}
+
+#Physical and Special Attacks Dictionary
+#List of Unique Attacks: Great Forest, Gaze, Plague, Heal, Drum Beat, Hoard, Full Defense
+skillDict = {
+  "Bash" : {
+    "DamageType" : "Physical",
+    "Damage" : 3,
+    "HitChance" : 100,
+    "EnergyCost" : 10,
+  },
+  "Chomp" : {
+    "DamageType" : "Physical",
+    "Damage" : 6,
+    "HitChance" : 80,
+    "EnergyCost" : 50,
+  },
+  "EarthQuake" : {
+    "DamageType" : "Special",
+    "Damage" : 7,
+    "HitChance" : 90,
+    "EnergyCost" : 60,
+  },
+  "Firebolt" : {
+    "DamageType" : "Special",
+    "Damage" : 4,
+    "HitChance" : 100,
+    "EnergyCost" : 20,
+  },
+  "Coin Bullets" : {
+    "DamageType" : "Special",
+    "Damage" : 6,
+    "HitChance" : 100,
+    "EnergyCost" : 60,
+  },
+  "Kaminari" : {
+    "DamageType" : "Special",
+    "Damage" : 5,
+    "HitChance" : 100,
+    "EnergyCost" : 40,
+  },
+  "Storm" : {
+    "DamageType" : "Special",
+    "Damage" : 8,
+    "HitChance" : 100,
+    "EnergyCost" : 100,
+  },
+  "Thunder Demon" : {
+    "DamageType" : "Special",
+    "Damage" : 8,
+    "HitChance" : 70,
+    "EnergyCost" : 80,
+  },
+  "Feirce Winds" : {
+    "DamageType" : "Special",
+    "Damage" : 4,
+    "HitChance" : 90,
+    "EnergyCost" : 20,
+  },
+  "Hurricane" : {
+    "DamageType" : "Special",
+    "Damage" : 9,
+    "HitChance" : 80,
+    "EnergyCost" : 150,
+  },
+  "Arrow Storm" : {
+    "DamageType" : "Physical",
+    "Damage" : 4,
+    "HitChance" : 90,
+    "EnergyCost" : 20,
+  },
+  "Silver Arrow" : {
+    "DamageType" : "Special",
+    "Damage" : 6,
+    "HitChance" : 80,
+    "EnergyCost" : 70,
+  },
+  "Acidic Spit" : {
+    "DamageType" : "Special",
+    "Damage" : 7,
+    "HitChance" : 70,
+    "EnergyCost" : 80,
+  },
+  "Blaze" : {
+    "DamageType" : "Special",
+    "Damage" : 7,
+    "HitChance" : 100,
+    "EnergyCost" : 100,
+  },
+  "Smash" : {
+    "DamageType" : "Physical",
+    "Damage" : 6,
+    "HitChance" : 80,
+    "EnergyCost" : 70,
+  },
+  "Stomp" : {
+    "DamageType" : "Physical",
+    "Damage" : 5,
+    "HitChance" : 90,
+    "EnergyCost" : 50,
+  },
+  "Wood Palm" : {
+    "DamageType" : "Special",
+    "Damage" : 7,
+    "HitChance" : 80,
+    "EnergyCost" : 90,
+  },
+  "Drum Beat" : {
+    "DamageType" : "Unique",
+    "EnergyCost" : 110,
+    "HitChance" : 100,
+  },
+  "Plague" : {
+    "DamageType" : "Unique",
+    "EnergyCost" : 100,
+    "HitChance" : 100,
+  },
+  "Heal" : {
+    "DamageType" : "Unique",
+    "EnergyCost" : 60,
+    "HitChance" : 100,
+  },
+  "Gaze" : {
+    "DamageType" : "Unique",
+    "EnergyCost" : 90,
+    "HitChance" : 100,
+  },
+  "Great Forest" : {
+    "DamageType" : "Unique",
+    "EnergyCost" : 80,
+    "HitChance" : 100,
+  },
+  "Hoard" : {
+    "DamageType" : "Unique",
+    "EnergyCost" : 10,
+    "HitChance" : 100,
+  },
+  "Full Defense" : {
+    "DamageType" : "Unique",
+    "EnergyCost" : 80,
+    "HitChance" : 100,
+  },
+}
+
+#Print out all of your Legends
+print("[Pachys] [HP",playerDict["Pachys"]["Health"],"] [SAtk",playerDict["Pachys"]["SpecialAtk"],"] [PAtk",playerDict["Pachys"]["PhysicalAtk"],"] [Def", playerDict["Pachys"]["Defense"],"] [Eng", playerDict["Pachys"]["Energy"],"] [Eng Regen",playerDict["Pachys"]["EnergyRegen"],"]")
+print("[Fafnir] [HP",playerDict["Fafnir"]["Health"],"] [SAtk",playerDict["Fafnir"]["SpecialAtk"],"] [PAtk",playerDict["Fafnir"]["PhysicalAtk"],"] [Def", playerDict["Fafnir"]["Defense"],"] [Eng", playerDict["Fafnir"]["Energy"],"] [Eng Regen",playerDict["Fafnir"]["EnergyRegen"],"]")
+print("[Rajin] [HP",playerDict["Rajin"]["Health"],"] [SAtk",playerDict["Rajin"]["SpecialAtk"],"] [PAtk",playerDict["Rajin"]["PhysicalAtk"],"] [Def", playerDict["Rajin"]["Defense"],"] [Eng", playerDict["Rajin"]["Energy"],"] [Eng Regen",playerDict["Rajin"]["EnergyRegen"],"]")
+print("[Fujin] [HP",playerDict["Fujin"]["Health"],"] [SAtk",playerDict["Fujin"]["SpecialAtk"],"] [PAtk",playerDict["Fujin"]["PhysicalAtk"],"] [Def", playerDict["Fujin"]["Defense"],"] [Eng", playerDict["Fujin"]["Energy"],"] [Eng Regen",playerDict["Fujin"]["EnergyRegen"],"]")
+print("[Apollo] [HP",playerDict["Apollo"]["Health"],"] [SAtk",playerDict["Apollo"]["SpecialAtk"],"] [PAtk",playerDict["Apollo"]["PhysicalAtk"],"] [Def", playerDict["Apollo"]["Defense"],"] [Eng", playerDict["Apollo"]["Energy"],"] [Eng Regen",playerDict["Apollo"]["EnergyRegen"],"]")
+
+#Choose Legend
+playerLegend = input("Which Legend From Above Do You Chose To Send Into Combat : ")
+if playerLegend != "Pachys" and playerLegend != "Fafnir" and playerLegend != "Rajin" and  playerLegend != "Fujin" and playerLegend != "Apollo":
+  
+    playerLegend = "Pachys"
+print("You Have Chose",playerLegend)
+
+#Setting Player Variables for combat
+playerMaxHp = playerDict[playerLegend]["Health"]
+playerCurrentHp = playerDict[playerLegend]["Health"]
+playerSAtk = playerDict[playerLegend]["SpecialAtk"]
+playerPAtk = playerDict[playerLegend]["PhysicalAtk"]
+playerDef = playerDict[playerLegend]["Defense"]
+playerMaxEnergy = playerDict[playerLegend]["Energy"]
+playerCurrentEnergy = playerDict[playerLegend]["Energy"]
+playerEnergyRegen = playerDict[playerLegend]["EnergyRegen"]
+playerSkillOne = playerDict[playerLegend]["Skill1"]
+playerSkillTwo = playerDict[playerLegend]["Skill2"]
+playerSkillThree = playerDict[playerLegend]["Skill3"]
+playerSkillFour = playerDict[playerLegend]["Skill4"]
+
+#Setting Enemy Variables
+enemyOptions = ("Oni", "Hydra", "Fenrir", "Cyclops", "Spriggan", "Tiamat")
+enemyLegend = random.choice(enemyOptions)
+enemyMaxHp = enemyDict[enemyLegend]["Health"]
+enemyCurrentHp = enemyDict[enemyLegend]["Health"]
+enemySAtk = enemyDict[enemyLegend]["SpecialAtk"]
+enemyPAtk = enemyDict[enemyLegend]["PhysicalAtk"]
+enemyDef = enemyDict[enemyLegend]["Defense"]
+enemySkillOne = enemyDict[enemyLegend]["Skill1"]
+enemySkillTwo = enemyDict[enemyLegend]["Skill2"]
+enemySkillThree = enemyDict[enemyLegend]["Skill3"]
+enemySkillFour = enemyDict[enemyLegend]["Skill4"]
+print("Your Enemy Is", enemyLegend)
+
+#Combat
+for i in range(999):
+  #Printing out the Hps and Skills
+  print ("[",playerLegend,playerCurrentHp,"/",playerMaxHp,"] [", enemyLegend,enemyCurrentHp,"/",enemyMaxHp,"]")
+  print ("[Energy",playerCurrentEnergy,"/",playerMaxEnergy,"]")
+  print ("[1]",playerSkillOne,"(", skillDict[playerSkillOne]["EnergyCost"],")")
+  print ("[2]",playerSkillTwo,"(", skillDict[playerSkillTwo]["EnergyCost"],")")
+  print ("[3]",playerSkillThree,"(", skillDict[playerSkillThree]["EnergyCost"],")")
+  print ("[4]",playerSkillFour,"(", skillDict[playerSkillFour]["EnergyCost"],")")
+  #Getting Player Skill
+  playerSkillUse = int(input("What skill do you want to use? "))
+  if playerSkillUse == 1:
+    playerSkillUse = playerSkillOne
+  if playerSkillUse == 2:
+    playerSkillUse = playerSkillTwo
+  if playerSkillUse == 3:
+    playerSkillUse = playerSkillThree
+  if playerSkillUse == 4:
+    playerSkillUse = playerSkillFour
+  PlayerDamageType = skillDict[playerSkillUse]["DamageType"]
+    
+  #Getting The Enemy Skill
+  enemySkills = (enemySkillOne,enemySkillTwo,enemySkillThree,enemySkillFour)
+  enemySkillUse = random.choice (enemySkills)
+  #Executing The Player Skill
+  hitChance = random.randint(1, 100)
+  if hitChance <= skillDict[playerSkillUse]["HitChance"]:
+  #Player Physical Skills
+    if PlayerDamageType == "Physical" and playerCurrentEnergy > skillDict[playerSkillUse]["EnergyCost"]:
+      playerBaseDamage = skillDict[playerSkillUse]["Damage"] * playerPAtk
+      playerEnergyCost = skillDict[playerSkillUse]["EnergyCost"]
+      playerDamageTotal = playerBaseDamage - enemyDef
+      if playerDamageTotal < 0:
+          playerDamageTotal = 0
+      enemyCurrentHp -= playerDamageTotal
+      playerCurrentEnergy -= playerEnergyCost
+      print ("You used", playerSkillUse,"Dealing", playerDamageTotal,"Damage")
+    if PlayerDamageType == "Physical" and playerCurrentEnergy < skillDict[playerSkillUse]["EnergyCost"]: print("To tired to use this skill")
+  
+  #Player Special Skills
+    if PlayerDamageType == "Special" and playerCurrentEnergy > skillDict[playerSkillUse]        ["EnergyCost"]:
+      playerBaseDamage = skillDict[playerSkillUse]["Damage"] * playerSAtk
+      playerEnergyCost = skillDict[playerSkillUse]["EnergyCost"]
+      playerDamageTotal = playerBaseDamage - enemyDef
+      if playerDamageTotal < 0:
+          playerDamageTotal = 0
+      enemyCurrentHp -= playerDamageTotal
+      playerCurrentEnergy -= playerEnergyCost
+      print ("You used", playerSkillUse,"Dealing", playerDamageTotal,"Damage")
+    if PlayerDamageType == "Special" and playerCurrentEnergy < skillDict[playerSkillUse]      ["EnergyCost"]: print("To tired to use this skill")
+  if hitChance > skillDict[playerSkillUse]["HitChance"]: print("You missed")
+  #Player Unique Attacks
+  if PlayerDamageType == "Unique" and playerCurrentEnergy > skillDict[playerSkillUse]        ["EnergyCost"]:
+      playerEnergyCost = skillDict[playerSkillUse]["EnergyCost"]
+      if playerSkillUse == "Heal":
+        playerCurrentHp += 5 * playerSAtk
+        if playerCurrentHp > playerMaxHp: playerCurrentHp = playerMaxHp
+        print("You Heal For", 5 * playerSAtk, "Hp")
+      if playerSkillUse == "Drum Beat":
+        playerSAtk += 1
+        print("You Up Your Special Damage")
+      if playerSkillUse == "Hoard":
+        playerCurrentEnergy = playerMaxEnergy
+        print("You Hoard Up Energy")
+      if playerSkillUse == "FullDefense":
+        playerDef += 1
+        print("You Up Your Defense Damage")
+      if playerSkillUse == "Plague":
+        enemyPoisoned = 1
+        print("You Poison Your Enemy")
+      playerCurrentEnergy -= playerEnergyCost
+  if PlayerDamageType == "Unique" and playerCurrentEnergy < skillDict[playerSkillUse] ["EnergyCost"]: print("To tired to use this skill")
+  if hitChance > skillDict[playerSkillUse]["HitChance"]: print("You missed")
+  #Energy Regen
+  playerCurrentEnergy += playerEnergyRegen
+  if playerCurrentEnergy > playerMaxEnergy:
+    playerCurrentEnergy = playerMaxEnergy
+  #Poison Damage For the enemy
+  if enemyPoisoned != 0:
+    enemyCurrentHp -= 10
+    print ("Your Enemy Takes 10 Poison Damage")
+  #Executing The Enemy Skill
