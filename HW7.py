@@ -12,7 +12,7 @@ admin = True
 
 #3. Create a separate integer variable that denotes the number of times
 #someone with admin credentials has logged in.
-adminInt = 1
+adminInt = 5
 
 #4. Create a nested if statement that checks to see if wifi is true,
 #login is true, and admin is true. If they are all true, print a
@@ -22,8 +22,9 @@ adminInt = 1
 if wifi == True:
     if login == True:
         if admin == True:
-            print("Welcome")
-elif wifi == False:
+            adminInt += 1
+            print("Welcome, Amount of admins are", adminInt)
+if wifi == False:
     print("Wifi is missing")
 if login == False:
     print("Login is missing")
