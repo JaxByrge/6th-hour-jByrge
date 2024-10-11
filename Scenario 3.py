@@ -86,7 +86,7 @@ enemyDict = {
         "Hp": "25",
         "Ac": "10",
         "Atk Mod" : 3,
-        "Atk Roll" : 8,
+        "Atk Roll" : 6,
     }
 }
 
@@ -118,19 +118,123 @@ while True:
                 enemyThree -= (random.randint(1, partyDict["Rouge"]["Atk Roll"]) + partyDict["Rouge"]["Atk Mod"])
         else: print("Failed Ac Roll")
         print("")
+    else:
+        print("Rouge is dead")
     #Skelton Warrior
-    if partyMemberFour > 0:
+    if enemyThree > 0:
         attacking = random.choice(partyList)
         acRoll = random.randint(1, 20)
         if acRoll > int(partyDict[attacking]["Ac"]):
             print("The Skeleton Warrior attacks", attacking)
             if attacking == "Warrior" :
-                enemyOne -= (random.randint(1, enemyDict["Rouge"]["Atk Roll"]) + enemyDict["Rouge"]["Atk Mod"])
+                partyMemberOne -= (random.randint(1, enemyDict["Skeleton Warrior"]["Atk Roll"]) + enemyDict["Skeleton Warrior"]["Atk Mod"])
             if attacking == "Archer" :
-                enemyTwo -= (random.randint(1, enemyDict["Rouge"]["Atk Roll"]) + enemyDict["Rouge"]["Atk Mod"])
+                partyMemberThree -= (random.randint(1, enemyDict["Skeleton Warrior"]["Atk Roll"]) + enemyDict["Skeleton Warrior"]["Atk Mod"])
             if attacking == "Mage" :
-                enemyThree -= (random.randint(1, enemyDict["Rouge"]["Atk Roll"]) + enemyDict["Rouge"]["Atk Mod"])
+                partyMemberTwo -= (random.randint(1, enemyDict["Skeleton Warrior"]["Atk Roll"]) + enemyDict["Skeleton Warrior"]["Atk Mod"])
             if attacking == "Rouge" :
-                enemyThree -= (random.randint(1, enemyDict["Rouge"]["Atk Roll"]) + enemyDict["Rouge"]["Atk Mod"])
-        else: print("Skeleton Failed Ac Roll")
+                partyMemberFour -= (random.randint(1, enemyDict["Skeleton Warrior"]["Atk Roll"]) + enemyDict["Skeleton Warrior"]["Atk Mod"])
+        else: print("Skeleton Warrior Failed Ac Roll")
         print("")
+    else:
+        print("Skeleton Warrior is dead")
+    #Archer Attack
+    if partyMemberThree > 0:
+        attacking = input("Which enemy does your Archer Attack: ")
+        acRoll = random.randint(1, 20)
+        if acRoll > int(enemyDict[attacking]["Ac"]):
+            print("The Archer attacks", attacking)
+            if attacking == "Necromancer" :
+                enemyOne -= (random.randint(1, partyDict["Archer"]["Atk Roll"]) + partyDict["Archer"]["Atk Mod"])
+            if attacking == "Skeleton Archer":
+                enemyTwo -= (random.randint(1, partyDict["Archer"]["Atk Roll"]) + partyDict["Archer"]["Atk Mod"])
+            if attacking == "Skeleton Warrior":
+                enemyThree -= (random.randint(1, partyDict["Archer"]["Atk Roll"]) + partyDict["Archer"]["Atk Mod"])
+        else: print("Failed Ac Roll")
+        print("")
+    else:
+        print("Archer is dead")
+    #Skelton Archer
+    if enemyTwo > 0:
+        attacking = random.choice(partyList)
+        acRoll = random.randint(1, 20)
+        if acRoll > int(partyDict[attacking]["Ac"]):
+            print("The Skeleton Archer attacks", attacking)
+            if attacking == "Warrior" :
+                partyMemberOne -= (random.randint(1, enemyDict["Skeleton Archer"]["Atk Roll"]) + enemyDict["Skeleton Archer"]["Atk Mod"])
+            if attacking == "Archer" :
+                partyMemberThree -= (random.randint(1, enemyDict["Skeleton Archer"]["Atk Roll"]) + enemyDict["Skeleton Archer"]["Atk Mod"])
+            if attacking == "Mage" :
+                partyMemberTwo -= (random.randint(1, enemyDict["Skeleton Archer"]["Atk Roll"]) + enemyDict["Skeleton Archer"]["Atk Mod"])
+            if attacking == "Rouge" :
+                partyMemberFour -= (random.randint(1, enemyDict["Skeleton Archer"]["Atk Roll"]) + enemyDict["Skeleton Archer"]["Atk Mod"])
+        else: print("Skeleton Warrior Failed Ac Roll")
+        print("")
+    else:
+        print("Skeleton Archer is dead")
+    #Mage Attack
+    if partyMemberTwo > 0:
+        attacking = input("Which enemy does your Mage Attack: ")
+        acRoll = random.randint(1, 20)
+        if acRoll > int(enemyDict[attacking]["Ac"]):
+            print("The Mage attacks", attacking)
+            if attacking == "Necromancer" :
+                enemyOne -= (random.randint(1, partyDict["Mage"]["Atk Roll"]) + partyDict["Mage"]["Atk Mod"])
+            if attacking == "Skeleton Archer":
+                enemyTwo -= (random.randint(1, partyDict["Mage"]["Atk Roll"]) + partyDict["Mage"]["Atk Mod"])
+            if attacking == "Skeleton Warrior":
+                enemyThree -= (random.randint(1, partyDict["Mage"]["Atk Roll"]) + partyDict["Mage"]["Atk Mod"])
+        else: print("Failed Ac Roll")
+        print("")
+    else:
+        print("Mage is dead")
+    #Necromancer
+    if enemyOne > 0:
+        attacking = random.choice(partyList)
+        acRoll = random.randint(1, 20)
+        if acRoll > int(partyDict[attacking]["Ac"]):
+            print("The Necromancer attacks", attacking)
+            if attacking == "Warrior" :
+                partyMemberOne -= (random.randint(1, enemyDict["Necromancer"]["Atk Roll"]) + enemyDict["Necromancer"]["Atk Mod"])
+            if attacking == "Archer" :
+                partyMemberThree -= (random.randint(1, enemyDict["Necromancer"]["Atk Roll"]) + enemyDict["Necromancer"]["Atk Mod"])
+            if attacking == "Mage" :
+                partyMemberTwo -= (random.randint(1, enemyDict["Necromancer"]["Atk Roll"]) + enemyDict["Necromancer"]["Atk Mod"])
+            if attacking == "Rouge" :
+                partyMemberFour -= (random.randint(1, enemyDict["Necromancer"]["Atk Roll"]) + enemyDict["Necromancer"]["Atk Mod"])
+        else: print("Necromancer Failed Ac Roll")
+        print("")
+        randomHeal = random.randint (1, 10)
+        if randomHeal > 5:
+            if enemyTwo < 15:
+                enemyTwo += random.randint(1, 6)
+                print("Necromancer Heals his skeleton Archer")
+            if enemyThree < 15:
+                enemyThree += random.randint(1, 6)
+                print("Necromancer Heals his skeleton Warrior")
+    else:
+        print("Necromancer is dead")
+    #Warrior Attack
+    if partyMemberOne > 0:
+        attacking = input("Which enemy does your Warrior Attack: ")
+        acRoll = random.randint(1, 20)
+        if acRoll > int(enemyDict[attacking]["Ac"]):
+            print("The Warrior attacks", attacking)
+            if attacking == "Necromancer" :
+                enemyOne -= (random.randint(1, partyDict["Warrior"]["Atk Roll"]) + partyDict["Warrior"]["Atk Mod"])
+            if attacking == "Skeleton Archer":
+                enemyTwo -= (random.randint(1, partyDict["Warrior"]["Atk Roll"]) + partyDict["Warrior"]["Atk Mod"])
+            if attacking == "Skeleton Warrior":
+                enemyThree -= (random.randint(1, partyDict["Warrior"]["Atk Roll"]) + partyDict["Warrior"]["Atk Mod"])
+        else: print("Failed Ac Roll")
+        print("")
+    else:
+        print("Warrior is dead")
+
+    #Win/Lose
+    if enemyOne < 1 and enemyTwo < 1 and enemyThree < 1:
+        print("You have defeated all your enemies")
+        exit(0)
+    if partyMemberOne < 1 and partyMemberTwo < 1 and partyMemberThree < 1 and partyMemberFour < 1:
+        print("You have been defeated by your enemies")
+        exit(0)
