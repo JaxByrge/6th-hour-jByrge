@@ -102,7 +102,7 @@ enemyThree = int(enemyDict["Skeleton Warrior"]["Hp"])
 partyList = ["Warrior","Mage","Archer","Rouge"]
 while True:
     print("[Warrior",partyMemberOne,"/ 30] [Mage",partyMemberTwo,"/ 23] [Archer",partyMemberThree,"/ 27] [Rouge",partyMemberFour,"/ 25]")
-    print("[Necromancer",enemyOne,"/ 40] [Skeleton Archer",enemyTwo,"/ 27] [Skeleton Warrior",enemyThree,"/ 25]")
+    print("[Necromancer",enemyOne,"/ 40] [Skeleton Archer",enemyTwo,"/ 27] [Skeleton Warrior",enemyThree,"/ 30]")
     print("")
     #Rouge Attack
     if partyMemberFour > 0:
