@@ -83,7 +83,7 @@ enemyDict = {
         "Atk Roll" : 4,
     },
     "Skeleton Warrior": {
-        "Hp": "25",
+        "Hp": "30",
         "Ac": "10",
         "Atk Mod" : 3,
         "Atk Roll" : 6,
@@ -207,11 +207,12 @@ while True:
         randomHeal = random.randint (1, 10)
         if randomHeal > 5:
             if enemyTwo < 15:
-                enemyTwo += random.randint(1, 6)
+                enemyTwo += random.randint(1, 10)
                 print("Necromancer Heals his skeleton Archer")
-            if enemyThree < 15:
-                enemyThree += random.randint(1, 6)
+            if enemyThree < 20:
+                enemyThree += random.randint(1, 10)
                 print("Necromancer Heals his skeleton Warrior")
+            print("")
     else:
         print("Necromancer is dead")
     #Warrior Attack
