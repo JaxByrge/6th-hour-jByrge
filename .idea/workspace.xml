@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15273a02-6f41-4086-b474-8bfdb2ccda02" name="Changes" comment="Added HW2">
-      <change afterPath="$PROJECT_DIR$/HW3.py" afterDir="false" />
+    <list default="true" id="15273a02-6f41-4086-b474-8bfdb2ccda02" name="Changes" comment="Added HW12">
+      <change afterPath="$PROJECT_DIR$/Game Test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW13.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW14.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Random.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW12.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW12.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW3.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW7.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW8.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW8.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenario 3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scenario 3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenario1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scenario1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenario2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scenario2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,25 +46,79 @@
     &quot;accountId&quot;: &quot;79b17bf8-6680-4197-8043-6d54355d3ea1&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/HW6.py" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2kkhaS2wGXHCa5DetZwyXuGm8qU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Card Game Playground.executor": "Run",
+    "Python.Game Test.executor": "Run",
     "Python.HW1.executor": "Run",
+    "Python.HW10.executor": "Run",
+    "Python.HW11.executor": "Run",
+    "Python.HW12.executor": "Run",
+    "Python.HW13.executor": "Run",
+    "Python.HW14.executor": "Run",
     "Python.HW2.executor": "Run",
     "Python.HW3.executor": "Run",
+    "Python.HW4.executor": "Run",
+    "Python.HW5.executor": "Run",
+    "Python.HW6.executor": "Run",
+    "Python.HW7.executor": "Run",
+    "Python.HW8.executor": "Run",
+    "Python.HW9.executor": "Run",
     "Python.Hello World.executor": "Run",
+    "Python.Playground 2.executor": "Run",
+    "Python.Playground.executor": "Run",
+    "Python.Random.executor": "Run",
+    "Python.Scenario 3.executor": "Run",
+    "Python.Scenario1.executor": "Run",
+    "Python.Scenario2.executor": "Run",
+    "Python.tick tac toe.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="HW12" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="6th-hour-jByrge" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW12.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.HW12" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -103,12 +167,225 @@
       <option name="project" value="LOCAL" />
       <updated>1724438028240</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added HW2">
+      <option name="closed" value="true" />
+      <created>1724871396459</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724871396459</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added HW3">
+      <option name="closed" value="true" />
+      <created>1724871466637</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724871466637</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added HW3">
+      <option name="closed" value="true" />
+      <created>1724871577952</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724871577952</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added HW3&#10;Added Playgrounds">
+      <option name="closed" value="true" />
+      <created>1725649553043</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725649553043</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added HW4">
+      <option name="closed" value="true" />
+      <created>1726167281984</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1726167281984</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added Scenario1">
+      <option name="closed" value="true" />
+      <created>1726598594199</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1726598594199</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added rest of scenario 1">
+      <option name="closed" value="true" />
+      <created>1726686334466</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1726686334466</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added scenario 2">
+      <option name="closed" value="true" />
+      <created>1727204802649</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1727204802649</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Updated scenario 2">
+      <option name="closed" value="true" />
+      <created>1727289040553</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1727289040553</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Updated scenario 2">
+      <option name="closed" value="true" />
+      <created>1727461620370</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1727461620370</updated>
+    </task>
+    <task id="LOCAL-00015" summary="HW5">
+      <option name="closed" value="true" />
+      <created>1727720696335</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1727720696335</updated>
+    </task>
+    <task id="LOCAL-00016" summary="HW6 added">
+      <option name="closed" value="true" />
+      <created>1727721636075</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1727721636075</updated>
+    </task>
+    <task id="LOCAL-00017" summary="HW7 added">
+      <option name="closed" value="true" />
+      <created>1727980729804</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1727980729804</updated>
+    </task>
+    <task id="LOCAL-00018" summary="HW7 fixed">
+      <option name="closed" value="true" />
+      <created>1727981011516</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1727981011516</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Finished all of Scenario 3">
+      <option name="closed" value="true" />
+      <created>1728673608409</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1728673608409</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Updated Scenario 3">
+      <option name="closed" value="true" />
+      <created>1728930871460</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1728930871460</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Updated Scenario 3">
+      <option name="closed" value="true" />
+      <created>1728931230930</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1728931230930</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added HW8">
+      <option name="closed" value="true" />
+      <created>1729622562335</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1729622562335</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Added HW9">
+      <option name="closed" value="true" />
+      <created>1729622844405</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1729622844405</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added HW8">
+      <option name="closed" value="true" />
+      <created>1729709344859</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1729709344859</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added HW10">
+      <option name="closed" value="true" />
+      <created>1730226700520</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1730226700520</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added HW11">
+      <option name="closed" value="true" />
+      <created>1730227308540</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1730227308540</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added HW12">
+      <option name="closed" value="true" />
+      <created>1730923152266</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1730923152266</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Added HW2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added HW2" />
+    <MESSAGE value="Added HW3" />
+    <MESSAGE value="Added HW3&#10;Added Playgrounds" />
+    <MESSAGE value="Added HW4" />
+    <MESSAGE value="Added Scenario1" />
+    <MESSAGE value="Added rest of scenario 1" />
+    <MESSAGE value="Added scenario 2" />
+    <MESSAGE value="Updated scenario 2" />
+    <MESSAGE value="HW5" />
+    <MESSAGE value="HW6 added" />
+    <MESSAGE value="HW7 added" />
+    <MESSAGE value="HW7 fixed" />
+    <MESSAGE value="Finished all of Scenario 3" />
+    <MESSAGE value="Updated Scenario 3" />
+    <MESSAGE value="Added HW9" />
+    <MESSAGE value="Added HW8" />
+    <MESSAGE value="Added HW10" />
+    <MESSAGE value="Added HW11" />
+    <MESSAGE value="Added HW12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added HW12" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/HW3.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

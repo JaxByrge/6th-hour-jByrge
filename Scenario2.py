@@ -80,7 +80,7 @@ enemyDict = {
 
 #Test the damage here by subtracting a party member's damage from the enemy's health.
 
-randomEncounters = ("Zombo", "Bogo", "Trogo", "Thrag", "Drackon")
+randomEncounters =   ("Zombo", "Bogo", "Trogo", "Thrag", "Drackon")
 encounter = random.choice(randomEncounters)
 print("You have enountered a wild", encounter)
 print("Which party member do you want to send forward")

@@ -3,7 +3,6 @@
 #Assignment: HW12
 import random
 import time
-from time import sleep
 
 #1. Create a for loop with variable i that counts down from 5 to 1
 #and then prints "Hello World!" at the end.
@@ -26,7 +25,5 @@ for i in animals:
 
 #4. Create a for loop that spells out a word you input backwards.
 #(HINT: Google "How to reverse a string in Python")
-x = input("input:")
-rev = x[::-1]
-for i in rev:
+for i in input("input:")[::-1]:
     print(i)

@@ -223,7 +223,7 @@ while True:
             print("The Warrior attacks", attacking)
             if attacking == "Necromancer" :
                 enemyOne -= (random.randint(1, partyDict["Warrior"]["Atk Roll"]) + partyDict["Warrior"]["Atk Mod"])
-            if attacking == "Skeleton Archer":
+             if attacking == "Skeleton Archer":
                 enemyTwo -= (random.randint(1, partyDict["Warrior"]["Atk Roll"]) + partyDict["Warrior"]["Atk Mod"])
             if attacking == "Skeleton Warrior":
                 enemyThree -= (random.randint(1, partyDict["Warrior"]["Atk Roll"]) + partyDict["Warrior"]["Atk Mod"])

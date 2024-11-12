@@ -2,7 +2,8 @@
 #Class: 6th Hour
 #Assignment: HW7
 from operator import truediv
-
+import random
+print(random.randint(1, 6))
 #1. Print Hello World!
 print("Hello world")
 #2. Create three different boolean variables named wifi, login, and admin.
@@ -30,3 +31,6 @@ if login == False:
     print("Login is missing")
 if admin == False:
     print("Admin is missing")
+
+
+    print(random.randint(1, 6))

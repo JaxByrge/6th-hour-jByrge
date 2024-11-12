@@ -1,7 +1,7 @@
 #Name: Jax Byrge
 #Class: 6th
 #Assignment: HW3
-
+import random
 print ("Hello World")
 
 letterList = ["A","B","C","D","F"]
@@ -17,3 +17,7 @@ numList.sort()
 print(numList)
 sum = (numList[0] + numList[1] + numList[2] + numList[3])
 print(sum)
+
+choiceRandom = random.choice("b")
+choiceRandom2 = choiceRandom
+print(choiceRandom)

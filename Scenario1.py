@@ -46,7 +46,7 @@ enemyDict = {
     }
 }
 print(enemyDict)
-yn = input("would you like to change an animal")
+yn = input("would you like to change an animal ")
 if yn == "Yes":
     animal = input("What animal do you want to change ")
     value = input("what attribute do you want to change ")
