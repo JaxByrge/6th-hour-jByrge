@@ -66,7 +66,7 @@ while True:
         "slot43": "[ ]",
         "slot44": "[ ]",
     }
-    print(moveChoice)
+
     slots[playerPos] = "[O]"
     print(slots["slot00"],slots["slot01"],slots["slot02"],slots["slot03"],slots["slot04"])
     print(slots["slot10"],slots["slot11"],slots["slot12"],slots["slot13"],slots["slot14"])
@@ -88,7 +88,15 @@ while True:
         playerX += 1
     sleep(1)
     #Borders
-    if playerX > maxX: playerX = maxX
-    if playerX < 0: playerX = 0
-    if playerY > maxY: playerY = maxY
-    if playerY < 0: playerY = 0
+    if playerX > maxX:
+        print("You Lost")
+        exit(0)
+    if playerX < 0:
+        print("You Lost")
+        exit(0)
+    if playerY > maxY:
+        print("You Lost")
+        exit(0)
+    if playerY < 0:
+        print("You Lost")
+        exit(0)
