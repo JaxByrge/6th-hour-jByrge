@@ -11,7 +11,6 @@
 #This prototype needs to allow the user to input the number of players, let each player rate
 #a single model from 1 to 5, and then give the average score of all of the ratings.
 import random
-import time
 playerAmount = int(input("How many players do you want to rate: "))
 type = ["Dress","Suit",]
 color = ["Red","Yellow","Blue","White","Black","Orange","Green","Purple"]
@@ -23,11 +22,8 @@ for i in range(playerAmount):
     styleX = random.choice(style)
     print("Contestant Number",i+1,"Is Wearing A", colorX, styleX, typeX)
     j = int(input("What do you rate this 1-5: "))
-    if j >= 5:
-        j = 5
-    if j <= 1:
-        j = 1
+    if j >= 5: j = 5
+    if j <= 1: j = 1
     overall.insert(i,j)
-x = sum(overall)
-x /= playerAmount
+x = sum(overall)/playerAmount
 print("Your Average Rating Was: ", x)

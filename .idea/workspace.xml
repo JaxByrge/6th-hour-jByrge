@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15273a02-6f41-4086-b474-8bfdb2ccda02" name="Changes" comment="Added HW13, and HW14 and updated everything">
-      <change afterPath="$PROJECT_DIR$/New Game Test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scenario 4.py" afterDir="false" />
+    <list default="true" id="15273a02-6f41-4086-b474-8bfdb2ccda02" name="Changes" comment="added scenario 4">
+      <change afterPath="$PROJECT_DIR$/test1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New Game Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/New Game Test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +78,7 @@
     "Python.Scenario 4.executor": "Run",
     "Python.Scenario1.executor": "Run",
     "Python.Scenario2.executor": "Run",
+    "Python.test1.executor": "Run",
     "Python.tick tac toe.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
@@ -353,7 +353,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731441212255</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="added scenario 4">
+      <option name="closed" value="true" />
+      <created>1731959102012</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1731959102012</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -378,7 +386,8 @@
     <MESSAGE value="Added HW11" />
     <MESSAGE value="Added HW12" />
     <MESSAGE value="Added HW13, and HW14 and updated everything" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added HW13, and HW14 and updated everything" />
+    <MESSAGE value="added scenario 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="added scenario 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

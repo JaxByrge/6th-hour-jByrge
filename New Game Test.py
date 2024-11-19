@@ -54,44 +54,48 @@ while True:
     #Movement of O
     x = 1
     movements = ["Down", "Up", "Right", "Left"]
-  #  while x == 1:
-  #      moveChoice = random.choice(movements)
-  #      if moveChoice == "Down":
-  #          playerY += 1
-  #          playerX = str
-  #          playerY = str
-  #          if slots[("slot" + playerY + playerX)] != "[ ]":
-  #              playerY = int
-  #              playerX = int
-  #              playerY -= 1
-  #          else: x = 0
-  #      if moveChoice == "Up":
-  #          playerY -= 1
-  #          playerX = str
-  #          playerY = str
-  #          if slots[("slot" + playerY + playerX)] != "[ ]":
-  #              playerY = int
-  #              playerX = int
-  #              playerY += 1
-  #          else: x = 0
-  #      if moveChoice == "Left":
-  #          playerX -= 1
-  #          playerX = str
-  #          playerY = str
-  #          if slots[("slot" + playerY + playerX)] != "[ ]":
-  #              playerY = int
-  #              playerX = int
-  #              playerX += 1
-  #          else: x = 0
-  #      if moveChoice == "Right":
-  #          playerX += 1
-  #          playerX = str
-  #          playerY = str
-  #          if slots[("slot" + playerY + playerX)] != "[ ]":
-  #              playerY = int
-  #              playerX = int
-  #              playerX -= 1
-  #          else: x = 0
+    while x == 1:
+        moveChoice = random.choice(movements)
+        if moveChoice == "Down":
+            playerY += 1
+            playerX = str
+            playerY = str
+            combineXY = ("slot" + playerY + playerX)
+            if slots[combineXY] != "[ ]":
+                playerY = int
+                playerX = int
+                playerY -= 1
+            else: x = 0
+        if moveChoice == "Up":
+            playerY -= 1
+            playerX = str
+            playerY = str
+            combineXY = ("slot" + playerY + playerX)
+            if slots[combineXY] != "[ ]":
+                playerY = int
+                playerX = int
+                playerY += 1
+            else: x = 0
+        if moveChoice == "Left":
+            playerX -= 1
+            playerX = str
+            playerY = str
+            combineXY = ("slot" + playerY + playerX)
+            if slots[combineXY] != "[ ]":
+                playerY = int
+                playerX = int
+                playerX += 1
+            else: x = 0
+        if moveChoice == "Right":
+            playerX += 1
+            playerX = str
+            playerY = str
+            combineXY = ("slot" + playerY + playerX)
+            if slots[combineXY] != "[ ]":
+                playerY = int
+                playerX = int
+                playerX -= 1
+            else: x = 0
 
     #Borders
     if playerX > maxX:
