@@ -17,13 +17,9 @@ color = ["Red","Yellow","Blue","White","Black","Orange","Green","Purple"]
 style = ["Plain","Lepeord Print","Striped","Polka Dots","Fluffy","Silk"]
 overall = []
 for i in range(playerAmount):
-    typeX = random.choice(type)
-    colorX = random.choice(color)
-    styleX = random.choice(style)
-    print("Contestant Number",i+1,"Is Wearing A", colorX, styleX, typeX)
+    print("Contestant Number",i+1,"Is Wearing A", random.choice(color), random.choice(style), random.choice(type))
     j = int(input("What do you rate this 1-5: "))
     if j >= 5: j = 5
     if j <= 1: j = 1
     overall.insert(i,j)
-x = sum(overall)/playerAmount
-print("Your Average Rating Was: ", x)
+print("Your Average Rating Was: ", sum(overall)/playerAmount)
