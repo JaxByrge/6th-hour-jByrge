@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15273a02-6f41-4086-b474-8bfdb2ccda02" name="Changes" comment="updated">
-      <change afterPath="$PROJECT_DIR$/HW15.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW16.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scenario 5.py" afterDir="false" />
+    <list default="true" id="15273a02-6f41-4086-b474-8bfdb2ccda02" name="Changes" comment="Added Hw15 and Hw16">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenario 4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scenario 4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -368,7 +364,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732045572549</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Added Hw15 and Hw16">
+      <option name="closed" value="true" />
+      <created>1736884923726</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1736884923726</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -395,7 +399,8 @@
     <MESSAGE value="Added HW13, and HW14 and updated everything" />
     <MESSAGE value="added scenario 4" />
     <MESSAGE value="updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+    <MESSAGE value="Added Hw15 and Hw16" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Hw15 and Hw16" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
