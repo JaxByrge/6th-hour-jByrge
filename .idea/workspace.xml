@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15273a02-6f41-4086-b474-8bfdb2ccda02" name="Changes" comment="Added Hw19">
-      <change afterPath="$PROJECT_DIR$/Scenario 6.py" afterDir="false" />
+    <list default="true" id="15273a02-6f41-4086-b474-8bfdb2ccda02" name="Changes" comment="Added Scenario6 and Scenario7">
+      <change afterPath="$PROJECT_DIR$/HW20.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenario6.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scenario6.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +67,7 @@
     "Python.HW18.executor": "Run",
     "Python.HW19.executor": "Run",
     "Python.HW2.executor": "Run",
+    "Python.HW20.executor": "Debug",
     "Python.HW3.executor": "Run",
     "Python.HW4.executor": "Run",
     "Python.HW5.executor": "Run",
@@ -78,11 +80,13 @@
     "Python.Playground 2.executor": "Run",
     "Python.Playground.executor": "Run",
     "Python.Random.executor": "Run",
+    "Python.Scenairio7.executor": "Run",
     "Python.Scenario 3.executor": "Run",
     "Python.Scenario 4.executor": "Run",
     "Python.Scenario 6.executor": "Run",
     "Python.Scenario1.executor": "Run",
     "Python.Scenario2.executor": "Run",
+    "Python.Scenario6.executor": "Run",
     "Python.test1.executor": "Run",
     "Python.tick tac toe.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -401,11 +405,18 @@
       <option name="project" value="LOCAL" />
       <updated>1738610938606</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Added Scenario6 and Scenario7">
+      <option name="closed" value="true" />
+      <created>1738611956649</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1738611956649</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added HW3" />
     <MESSAGE value="Added HW3&#10;Added Playgrounds" />
     <MESSAGE value="Added HW4" />
     <MESSAGE value="Added Scenario1" />
@@ -430,7 +441,8 @@
     <MESSAGE value="Added Hw17" />
     <MESSAGE value="Added Hw18" />
     <MESSAGE value="Added Hw19" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Hw19" />
+    <MESSAGE value="Added Scenario6 and Scenario7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Scenario6 and Scenario7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
