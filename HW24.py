@@ -8,7 +8,7 @@ import random, time
 
 #2. Create a fourth attribute in the class called max_health that has the same values as health
 class stats:
-    def __init__(self,health,damage,speed,name):
+    def __init__(self,health,damage,speed):
         self.health = health
         self.damage = damage
         self.speed = speed
@@ -23,10 +23,10 @@ class stats:
         if self.health > self.maxHealth:
             self.health = self.maxHealth
 #3. Copy the warrior and healer objects from HW23, and then make two more character objects with the following attribute values: thief (health/max: 50, damage: 30, speed: 40) and mage (health/max: 45, damage:35, speed: 25)
-warrior = stats(100,20,30,"warrior")
-healer = stats(60,10,30,"healer")
-thief = stats(50,30,40,"thief")
-mage = stats(45,35,25,"mage")
+warrior = stats(100,20,30)
+healer = stats(60,10,30)
+thief = stats(50,30,40)
+mage = stats(45,35,25)
 #4. Randomly choose one of the four character objects to take the damage over time function and call the function to them
 partyList = [warrior,healer,thief,mage]
 partyPick = random.choice(partyList)
@@ -35,5 +35,4 @@ partyPick.burn()
 print("The party member's current health is ",partyPick.health)
 partyPick.heal()
 print("The party member's after the heal is ",partyPick.health)
-
 
