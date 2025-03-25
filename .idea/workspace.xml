@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15273a02-6f41-4086-b474-8bfdb2ccda02" name="Changes" comment="Added Scenario6 and Scenario7">
-      <change afterPath="$PROJECT_DIR$/HW20.py" afterDir="false" />
+    <list default="true" id="15273a02-6f41-4086-b474-8bfdb2ccda02" name="Changes" comment="Added scenario 8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenario6.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scenario6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenario 8.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scenario 8.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,48 +50,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Card Game Playground.executor": "Run",
-    "Python.Game Test.executor": "Run",
-    "Python.HW1.executor": "Run",
-    "Python.HW10.executor": "Run",
-    "Python.HW11.executor": "Run",
-    "Python.HW12.executor": "Run",
-    "Python.HW13.executor": "Run",
-    "Python.HW14.executor": "Run",
-    "Python.HW15.executor": "Run",
-    "Python.HW16.executor": "Run",
-    "Python.HW17.executor": "Run",
-    "Python.HW18.executor": "Run",
-    "Python.HW19.executor": "Run",
-    "Python.HW2.executor": "Run",
-    "Python.HW20.executor": "Debug",
-    "Python.HW3.executor": "Run",
-    "Python.HW4.executor": "Run",
-    "Python.HW5.executor": "Run",
-    "Python.HW6.executor": "Run",
-    "Python.HW7.executor": "Run",
-    "Python.HW8.executor": "Run",
-    "Python.HW9.executor": "Run",
-    "Python.Hello World.executor": "Run",
-    "Python.New Game Test.executor": "Run",
-    "Python.Playground 2.executor": "Run",
-    "Python.Playground.executor": "Run",
-    "Python.Random.executor": "Run",
-    "Python.Scenairio7.executor": "Run",
-    "Python.Scenario 3.executor": "Run",
-    "Python.Scenario 4.executor": "Run",
-    "Python.Scenario 6.executor": "Run",
-    "Python.Scenario1.executor": "Run",
-    "Python.Scenario2.executor": "Run",
-    "Python.Scenario6.executor": "Run",
-    "Python.test1.executor": "Run",
-    "Python.tick tac toe.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Ai Playground.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Card Game Playground.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Game Test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW10.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW11.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW12.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW13.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW14.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW15.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW16.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW17.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW18.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW19.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW20.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.HW21.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW22.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW23.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW7.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW8.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW9.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Hello World.executor&quot;: &quot;Run&quot;,
+    &quot;Python.New Game Test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Playground 2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Playground.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Random.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Roulete Playground.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Scenairio7.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Scenario 3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Scenario 4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Scenario 6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Scenario 8.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Scenario1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Scenario2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Scenario6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.playground3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tick tac toe.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="6th-hour-jByrge" />
@@ -413,16 +420,66 @@
       <option name="project" value="LOCAL" />
       <updated>1738611956649</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Added HW20">
+      <option name="closed" value="true" />
+      <created>1740081557005</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1740081557005</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Added PLayground">
+      <option name="closed" value="true" />
+      <created>1740599707403</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1740599707403</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Added Ai PLayground">
+      <option name="closed" value="true" />
+      <created>1740686766884</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1740686766884</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Added HW20">
+      <option name="closed" value="true" />
+      <created>1741030600617</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1741030600617</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Added HW22">
+      <option name="closed" value="true" />
+      <created>1741289715670</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1741289715670</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Added HW23 started scenario 8">
+      <option name="closed" value="true" />
+      <created>1741633637709</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1741633637709</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Added scenario 8">
+      <option name="closed" value="true" />
+      <created>1741891506458</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1741891506458</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added HW3&#10;Added Playgrounds" />
-    <MESSAGE value="Added HW4" />
-    <MESSAGE value="Added Scenario1" />
-    <MESSAGE value="Added rest of scenario 1" />
-    <MESSAGE value="Added scenario 2" />
-    <MESSAGE value="Updated scenario 2" />
     <MESSAGE value="HW5" />
     <MESSAGE value="HW6 added" />
     <MESSAGE value="HW7 added" />
@@ -442,7 +499,13 @@
     <MESSAGE value="Added Hw18" />
     <MESSAGE value="Added Hw19" />
     <MESSAGE value="Added Scenario6 and Scenario7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Scenario6 and Scenario7" />
+    <MESSAGE value="Added PLayground" />
+    <MESSAGE value="Added Ai PLayground" />
+    <MESSAGE value="Added HW20" />
+    <MESSAGE value="Added HW22" />
+    <MESSAGE value="Added HW23 started scenario 8" />
+    <MESSAGE value="Added scenario 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added scenario 8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

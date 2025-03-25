@@ -20,14 +20,14 @@ class stats:
         self.ac = ac
         self.name = name
 #party stats
-warrior = stats(25,6,3,1,"warrior")
-thief = stats(18,6,2,1,"thief")
-mage = stats(16,8,1,1,"mage")
+warrior = stats(25,6,3,12,"warrior")
+thief = stats(18,6,2,9,"thief")
+mage = stats(16,8,1,10,"mage")
 partylist = [warrior,thief,mage]
 #enemy stats
-skeleton = stats(19,4,2,1,"skeleton")
-goblin = stats(15,6,1,1,"goblin")
-witch = stats(18,10,1,1,"witch")
+skeleton = stats(19,4,2,8,"skeleton")
+goblin = stats(15,6,1,9,"goblin")
+witch = stats(18,10,1,7,"witch")
 enemylist = [skeleton,goblin,witch]
 #damage roll def
 def damageroll(attacker,target):
