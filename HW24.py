@@ -17,7 +17,7 @@ class stats:
         for i in range(10):
             self.health -= random.randint(1,6)
         if self.health < 0:
-            self.health = self.maxHealth
+            self.health = 0
     def heal(self):
         self.health += 30
         if self.health > self.maxHealth:
