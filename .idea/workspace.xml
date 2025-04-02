@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15273a02-6f41-4086-b474-8bfdb2ccda02" name="Changes" comment="Added scenario 8">
+    <list default="true" id="15273a02-6f41-4086-b474-8bfdb2ccda02" name="Changes" comment="Added HW24">
+      <change afterPath="$PROJECT_DIR$/playgroundf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenario 8.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scenario 8.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +71,7 @@
     &quot;Python.HW21.executor&quot;: &quot;Run&quot;,
     &quot;Python.HW22.executor&quot;: &quot;Run&quot;,
     &quot;Python.HW23.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW24.executor&quot;: &quot;Run&quot;,
     &quot;Python.HW3.executor&quot;: &quot;Run&quot;,
     &quot;Python.HW4.executor&quot;: &quot;Run&quot;,
     &quot;Python.HW5.executor&quot;: &quot;Run&quot;,
@@ -476,11 +477,34 @@
       <option name="project" value="LOCAL" />
       <updated>1741891506458</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Added HW24">
+      <option name="closed" value="true" />
+      <created>1742928383964</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1742928383964</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Added HW24">
+      <option name="closed" value="true" />
+      <created>1742928430668</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1742928430668</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Added HW24">
+      <option name="closed" value="true" />
+      <created>1742928547841</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1742928547841</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HW5" />
     <MESSAGE value="HW6 added" />
     <MESSAGE value="HW7 added" />
     <MESSAGE value="HW7 fixed" />
@@ -505,7 +529,8 @@
     <MESSAGE value="Added HW22" />
     <MESSAGE value="Added HW23 started scenario 8" />
     <MESSAGE value="Added scenario 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added scenario 8" />
+    <MESSAGE value="Added HW24" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added HW24" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
