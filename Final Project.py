@@ -38,6 +38,8 @@ def showStats():
     print("Player HP:",player.hp,"/",player.maxhp)
     print(enemySlot.name,"HP:",enemySlot.hp,"/",enemySlot.maxhp)
 def playerAction():
-
+    try:
+        action = int(input("(1) Strike (2) Spell:"))
+    if action =
 chooseEnemy()
 showStats()
