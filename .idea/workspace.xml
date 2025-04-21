@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15273a02-6f41-4086-b474-8bfdb2ccda02" name="Changes" comment="Added HW25">
-      <change afterPath="$PROJECT_DIR$/Black Jack.py" afterDir="false" />
+    <list default="true" id="15273a02-6f41-4086-b474-8bfdb2ccda02" name="Changes" comment="black jack">
+      <change afterPath="$PROJECT_DIR$/Final Project.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +55,7 @@
     "Python.Ai Playground.executor": "Run",
     "Python.Black Jack.executor": "Run",
     "Python.Card Game Playground.executor": "Run",
+    "Python.Final Project.executor": "Run",
     "Python.Game Test.executor": "Run",
     "Python.HW1.executor": "Run",
     "Python.HW10.executor": "Run",
@@ -511,11 +512,18 @@
       <option name="project" value="LOCAL" />
       <updated>1743619094976</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="black jack">
+      <option name="closed" value="true" />
+      <created>1744052764941</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1744052764941</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HW7 added" />
     <MESSAGE value="HW7 fixed" />
     <MESSAGE value="Finished all of Scenario 3" />
     <MESSAGE value="Updated Scenario 3" />
@@ -540,7 +548,8 @@
     <MESSAGE value="Added scenario 8" />
     <MESSAGE value="Added HW24" />
     <MESSAGE value="Added HW25" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added HW25" />
+    <MESSAGE value="black jack" />
+    <option name="LAST_COMMIT_MESSAGE" value="black jack" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
