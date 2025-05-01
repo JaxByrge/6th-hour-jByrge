@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15273a02-6f41-4086-b474-8bfdb2ccda02" name="Changes" comment="black jack">
-      <change afterPath="$PROJECT_DIR$/Final Project.py" afterDir="false" />
+    <list default="true" id="15273a02-6f41-4086-b474-8bfdb2ccda02" name="Changes" comment="Final Project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playgroundf.py" beforeDir="false" afterPath="$PROJECT_DIR$/playgroundf.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +97,7 @@
     "Python.Scenario2.executor": "Run",
     "Python.Scenario6.executor": "Run",
     "Python.playground3.executor": "Run",
+    "Python.playgroundf.executor": "Run",
     "Python.test1.executor": "Run",
     "Python.tick tac toe.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -520,11 +521,26 @@
       <option name="project" value="LOCAL" />
       <updated>1744052764941</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Final Project">
+      <option name="closed" value="true" />
+      <created>1745261360748</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1745261360748</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Final Project">
+      <option name="closed" value="true" />
+      <created>1745261560658</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1745261560658</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HW7 fixed" />
     <MESSAGE value="Finished all of Scenario 3" />
     <MESSAGE value="Updated Scenario 3" />
     <MESSAGE value="Added HW9" />
@@ -549,7 +565,8 @@
     <MESSAGE value="Added HW24" />
     <MESSAGE value="Added HW25" />
     <MESSAGE value="black jack" />
-    <option name="LAST_COMMIT_MESSAGE" value="black jack" />
+    <MESSAGE value="Final Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
